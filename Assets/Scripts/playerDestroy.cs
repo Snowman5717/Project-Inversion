@@ -7,7 +7,8 @@ public class playerDestroy : MonoBehaviour
     Vector3 spawnPoint;
 
     public static bool reset = false;
-
+	public static bool died;
+	
 	// Use this for initialization
 	void Start () 
     {
@@ -24,9 +25,14 @@ public class playerDestroy : MonoBehaviour
     {
         if(col.gameObject.tag == "Obstacle")
         {
-
+			died = true;
             reset = true;
-            transform.position = spawnPoint;
+            Application.LoadLevel(2);
+        }
+        if(col.gameObject.tag == "EndPortal")
+        {
+        	died = false;
+			Application.LoadLevel(2);
         }
     }
 }
