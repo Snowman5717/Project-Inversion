@@ -6,6 +6,8 @@ public class playerDestroy : MonoBehaviour
 
     Vector3 spawnPoint;
 
+    public static bool reset = false;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -22,6 +24,8 @@ public class playerDestroy : MonoBehaviour
     {
         if(col.gameObject.tag == "Obstacle")
         {
+
+            reset = true;
             transform.position = spawnPoint;
         }
     }
