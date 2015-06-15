@@ -4,15 +4,12 @@ using System.Collections;
 public class playerDestroy : MonoBehaviour 
 {
 
-    Vector3 spawnPoint;
-
     public static bool reset = false;
 	public static bool died;
 	
 	// Use this for initialization
 	void Start () 
     {
-        spawnPoint = transform.position;
 	}
 	
 	// Update is called once per frame
