@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a63d4d23d599aa54394f2badc25e2550
-timeCreated: 1433774757
+guid: d62a7fb3ed0b7eb4c9ae82716a80b1c3
+timeCreated: 1434384755
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -27,7 +27,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -46,7 +46,15 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -1
+    compressionQuality: 50
   spriteSheet:
     sprites: []
   spritePackingTag: 
