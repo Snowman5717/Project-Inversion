@@ -21,6 +21,6 @@ public class CompletionStatus : MonoBehaviour
 		else
 		{
 			image.sprite = success;
-		}
+        }
 	}
 }
